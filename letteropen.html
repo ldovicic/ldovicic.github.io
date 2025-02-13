@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    
+    <title>Valentin <3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="gif-overlay">
+      <img src="./images/letter.gif" id="letter-gif">
+    </div>
+    
+    <div id="maindiv" class="letter">
+      <img class="openletterimg" src="./images/obalkaotvorena.png">
+      <div class="inside">
+        <p class="lettertext">
+          Budeš môj<br><span>Valentín?</span>
+        </p>
+        <div class="top-align">
+          <a href="#" id="yes-button"><img class="yes" src="./images/ano.png"></a>
+          <img class="figureletter" src="./images/alicka.png">
+          <a href="./letteropensad.html"><img class="no" src="./images/nie.png"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="success-gif-overlay">
+      <img src="./images/success.gif" id="success-gif">
+    </div>
+
+    <script>
+      window.onload = function () {
+      const gifOverlay = document.getElementById("gif-overlay");
+      const introGif = document.getElementById("letter-gif");
+      const everything = document.getElementById("maindiv");
+
+      introGif.addEventListener("animationend", () => {
+        gifOverlay.style.display = "none";
+        everything.style.display = "flex";
+      });
+
+      setTimeout(() => {
+        gifOverlay.style.display = "none";
+        everything.style.display = "flex";
+      }, 4300);
+
+      const yesButton = document.getElementById("yes-button");
+        const successGifOverlay = document.getElementById("success-gif-overlay");
+
+        yesButton.addEventListener("click", function (event) {
+          event.preventDefault();
+          
+          everything.style.display = "none";
+          successGifOverlay.style.display = "flex";
+
+          setTimeout(() => {
+            window.location.href = "./success.html";
+          }, 700);
+        });
+    };
+    </script>
+  </body>
+</html>

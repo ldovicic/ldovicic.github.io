@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/background.png');
+    font-family: "Pixelify Sans", serif;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.lettertitle {
+    font-weight: 700;
+}
+
+.letterbtn {
+    background-color: #FFCED2;
+    border: none;
+    box-shadow: 4px 4px 4px #FA8A94;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gif-overlay {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    padding-top: 10vh;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+#maindiv {
+    /* display: none; */
+}
+
+#success-gif-overlay {
+    display: none;
+}
+
+@media screen and (orientation:portrait) {
+    .lettertitle {
+        font-size: 10vw;
+        margin: 10vw 5vw;
+    }
+
+    .letterimg {
+        height: 50vw;
+        margin-bottom: 5vw;
+    }
+
+    .letterbtn {
+        height: 12vw;
+        width: 50vw;
+        font-size: 10vw;
+    }
+
+    #gif-overlay img {
+        height: 50vh;
+    }
+}
+
+
+@media screen and (orientation:landscape) {
+    .lettertitle {
+        font-size: 7vh;
+        margin: 10vh 15vh;
+    }
+
+    .letterimg {
+        height: 50vh;
+        margin-bottom: 5vh;
+    }
+
+    .letterbtn {
+        height: 5vh;
+        width: 18vh;
+        font-size: 3.5vh;
+    }
+
+    #gif-overlay img {
+        height: 90vh;
+    }
+
+    .openletterimg {
+        position: fixed;
+        height: 90vh;
+        padding-top: 10vh;
+    }
+
+    .inside {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding-top: 28vh;
+    }
+
+    .lettertext {
+        font-size: 4vh;
+    }
+
+    span {
+        font-size: 5vh;
+        font-weight: 700;
+    }
+
+    .top-align {
+        display: flex;
+        align-items: start;
+    }
+
+    .figureletter {
+        height: 24vh;
+    }
+    .inside a img {
+        height: 50px;
+    }
+
+    #success-gif-overlay img {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .success {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .successtitle {
+        padding-top: 10vh;
+        font-size: 15vh;
+        font-weight: 700;
+    }
+
+    .successfigures img{
+        height: 50vh;
+        position: relative;
+    }
+
+    #leftfig {
+        left: 5vw;
+    }
+
+    #rightfig {
+        right: 5vw;
+    }
+
+    .successdesc {
+        text-align: center;
+        font-size: 5vh;
+    }
+}
