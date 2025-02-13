@@ -128,8 +128,9 @@ a {
     .figureletter {
         height: 24vh;
     }
+
     .inside a img {
-        height: 50px;
+        height: 6vh;
     }
 
     #success-gif-overlay img {
@@ -149,7 +150,7 @@ a {
         font-weight: 700;
     }
 
-    .successfigures img{
+    .successfigures img {
         height: 50vh;
         position: relative;
     }
