@@ -38,16 +38,15 @@ a {
 }
 
 #gif-overlay {
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     justify-content: center;
-    padding-top: 10vh;
     overflow-x: hidden;
     width: 100vw;
 }
 
 #maindiv {
-    /* display: none; */
+    display: none;
 }
 
 #success-gif-overlay {
@@ -95,7 +94,9 @@ a {
     }
 
     #gif-overlay img {
+        position: fixed;
         height: 90vh;
+        padding-top: 10vh;
     }
 
     .openletterimg {
